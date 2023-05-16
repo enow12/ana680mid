@@ -5,6 +5,7 @@
         <title>Student Classification</title>
 </head>
 <body>
+<h1> STUDENT CLASSIFICATION SITE</h1>
         <form action="{{ url_for('predict')}}" method="POST">
                 math_score:   <input type="number" name="math_score"></br>
                 reading_score:    <input type="number" name="reading_score"></br>
@@ -12,6 +13,6 @@
 
                 <input type=submit value=Submit>
         </form>
-         My final prediction: {{ predict }}
+         <p style= "color: blue;">My final prediction: {{ predict }} </p>
 </body>
 </html>

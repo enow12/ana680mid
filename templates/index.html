@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charsets="UTF-8">
+        <title>Student Classification</title>
+</head>
+<body>
+        <form action="{{ url_for('predict')}}" method="POST">
+                math_score:   <input type="number" name="math_score"></br>
+                reading_score:    <input type="number" name="reading_score"></br>
+                writing_score:   <input type="number" name="writing_score"></br>
+
+                <input type=submit value=Submit>
+        </form>
+         My final prediction: {{ predict }}
+</body>
+</html>
